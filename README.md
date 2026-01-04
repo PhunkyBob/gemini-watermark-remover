@@ -106,7 +106,7 @@ gemini-watermark-remover/
 ## Build
 
 ```bash
-uv run python -m nuitka --standalone --onefile --follow-imports --windows-console-mode=force remove_watermark.py
+uv run python -m nuitka --standalone --onefile --follow-imports --windows-console-mode=force --include-data-files=watermark_48x48.bin=watermark_48x48.bin --include-data-files=watermark_96x96.bin=watermark_96x96.bin --include-package=cv2 remove_watermark.py
 ```
 
 ## Limitations
