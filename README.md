@@ -103,6 +103,12 @@ gemini-watermark-remover/
 └── watermark_96x96.bin       # 96x96 watermark data
 ```
 
+## Build
+
+```bash
+uv run python -m nuitka --standalone --onefile --follow-imports --windows-console-mode=force remove_watermark.py
+```
+
 ## Limitations
 
 - Only removes **Gemini visible watermarks** (the semi-transparent logo in bottom-right)
