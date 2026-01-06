@@ -51,15 +51,32 @@ pip install opencv-python numpy
 ### Basic usage
 
 ```bash
-# Remove watermark (creates input_nowatermark.jpg)
+# Remove watermark (creates input_nowatermark.png)
 uv run remove_watermark.py input.png
 # or
 python remove_watermark.py input.png
 
 # Specify output file
-uv run remove_watermark.py input.png clean.png
+uv run remove_watermark.py input.png --out clean.png
 # or
-python remove_watermark.py input.png clean.png
+# python remove_watermark.py input.png --out clean.png
+
+# Specify output directory
+uv run remove_watermark.py input.png --out output/
+```
+
+### Process multiple files
+
+```bash
+# Process multiple files (creates input1_nowatermark.png and input2_nowatermark.png)
+uv run remove_watermark.py input1.png input2.png
+
+# Process multiple files to a specific directory
+uv run remove_watermark.py input1.png input2.png --out output/
+
+# Note: With multiple files, --out must be an existing directory
+# This will ERROR:
+uv run remove_watermark.py input1.png input2.png --out result.png
 ```
 
 ### Force watermark size
