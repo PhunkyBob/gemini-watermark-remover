@@ -54,12 +54,10 @@ pip install opencv-python numpy
 # Remove watermark (creates input_nowatermark.png)
 uv run remove_watermark.py input.png
 # or
-python remove_watermark.py input.png
+# python remove_watermark.py input.png
 
 # Specify output file
 uv run remove_watermark.py input.png --out clean.png
-# or
-# python remove_watermark.py input.png --out clean.png
 
 # Specify output directory
 uv run remove_watermark.py input.png --out output/
