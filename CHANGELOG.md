@@ -4,6 +4,7 @@
 
 - [CHANGE] Multiple input files.
 - [CHANGE] Argument `--out` to be use to specify output name.
+- [ADD] Unit tests.
 
 ## 0.1.0 (2026-01-04)
 
